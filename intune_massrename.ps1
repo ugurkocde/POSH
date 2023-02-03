@@ -8,6 +8,7 @@ Connect-MSGraph
 
 # Path to CSV File, Example: "C:\TEMP\device_rename.csv"
 $CSVFile = "<PATH TO CSV>"
+$CSVFilePath = Split-Path $CSVFile -Parent
 
 # Path to logfile
 $LogFile = "$CSVFilePath\Intune_Rename_Script\intune_rename_script.log"
